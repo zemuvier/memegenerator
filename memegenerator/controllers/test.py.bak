@@ -1,0 +1,6 @@
+import ctypes
+
+lib = ctypes.CDLL('./libmeme.so')
+pfun = lib.makeMeme
+x = pfun(img, 'ex1.jpg', text)
+print "Success!"
