@@ -1,0 +1,20 @@
+{{extend 'layout.html'}}
+<html>
+   <head> <center> <h1>
+     MEMEGENERATOR </center> </h1>  </head>
+   <body>
+<form action="{{=URL('meme')}}" methods ="POST" enctype="multipart/form-data">
+    <h3>Add the image here </h3>
+    <input type="file" name="img" accept="image/jpeg">
+    <h3>Add the text here</h3>
+    <textarea name="text"></textarea>
+    <div style="text-align:center"></div>
+    <input type="submit" value="Create meme!">
+</form>
+
+  <h2> <center> Enjoy it! </center> </h2>
+{{pass}}
+
+</body>
+    There were🌚{{=counter}}
+</html>
