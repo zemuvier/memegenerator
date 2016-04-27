@@ -1,3 +1,0 @@
-{{extend 'layout.html'}}
-<h1>Meme is from: {{=image}}</h1>
-<img src {{=image}} >
