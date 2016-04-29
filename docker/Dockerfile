@@ -17,7 +17,7 @@ RUN apt-get install -y gcc-4.9
 RUN apt-get update -y
 RUN sudo apt-get install -y libgd2-xpm-dev
 
-RUN adduser --quiet  jenkins
+RUN adduser --quiet jenkins
 RUN echo "jenkins:jenkins" | chpasswd
 
 EXPOSE 22
